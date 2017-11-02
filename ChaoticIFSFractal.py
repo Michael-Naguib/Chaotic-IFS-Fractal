@@ -1,4 +1,5 @@
 #Imports
+print("Getting imports")
 import matplotlib.pyplot as plt
 import numpy as np
 import sys
@@ -10,7 +11,7 @@ import pylab as pl
 na = np.array
 
 #Settings recomended 10^4
-quantity = int(math.pow(10,4))
+quantity = 5* int(math.pow(10,4))
 initial = np.array([1,1])
 
 #Sets
@@ -37,6 +38,49 @@ nsnTransform = [
     [na([[0.2,0-0.26],[0.23,0.22]]),na([0,1.6]),5,0.10],
     [na([[0-0.15,0.28],[0.26,0.24]]),na([0,0.44]),0,0.04]
 ]
+
+#Get Set
+def askForTransform(indexd = ""):
+    print("-------------- Transform %s ---------------"%indexd)
+    a = float(input("Enter A: "))
+    b = float(input("Enter B: "))
+    c = float(input("Enter C: "))
+    d = float(input("Enter D: "))
+    xs = float(input("Enter X-Shift: "))
+    ys = float(input("Enter Y-Shift: "))
+    r =float(input("Enter rotation theta deg: "))
+    p = float(input("Enter Probability: "))
+    return [np.array([[a,b],[c,d]]),np.array([xs,ys]),r,p]
+
+#ask the user for info
+def buildSystem(predefinedSet=barnsleyTransform):
+    print("---------------------------------------------------------------------")
+    print("Welcome To Chaotic IFS Fractal Generator by Michael N.")
+    print("---------------------------------------------------------------------")
+    print("Please Provide transformations in the following form:")
+    print("  a b   for Stretch       ")
+    print("  c d                     ")
+    print("ALL p % as a FRACTION must add up to 1 !!! use nice numbers please ex. type 0.5  for 50% ")
+    print("RECCOMENDED points Quantity: 50000")
+    print("--------------------------------------------")
+    pointsQuantity = int(input("Number of Points: "))
+    usePredefined = str(input("Use Predefined Set? [y/n]: "))
+    if usePredefined =="y":
+        print("Using this as the set: it may look different...")
+        print(str(predefinedSet))
+        print("--------------------------------------------")
+        return predefinedSet,pointsQuantity
+    print("--------------------------------------------")
+    counter = 0
+    allTransForms = []
+    while True:
+        allTransForms.append(askForTransform(indexd=counter+1))
+        counter +=1
+        c = input("Add another Transform? [y/n]: ")
+        if c == "n":
+            break
+    print("--------------------- All Transforms Set ---------------------------")
+    return allTransForms,pointsQuantity
 
 #DIRECTLY from stack overflow ALL credit for this function to the author at https://stackoverflow.com/questions/3160699/python-progress-bar
 def update_progress(progress):
@@ -83,7 +127,7 @@ def ifs(pointsQuantity,transformations,deterministic=False,initialPoint=np.array
 
 #Calculate the Points
 def calcIfs(transformSet):
-    print("[Begin] points=%s"%quantity)
+    print("[Beginning Calculation] points=%s"%quantity)
     x,y = ifs(quantity,transformSet)
     sys.stdout.flush()
     print("End")
@@ -106,13 +150,21 @@ def findRatios(x,y):
 def findAverage(allX):
     return sum(allX)/len(allX)
 
-def fractalPlot(x,y,color=(0,0,0)):
-    #Plot the points
+def fractalPlot(x,y,color=(0,0,0),pointByPoint=False):
     plt.title('Chaotic IFS Fractal: Graph')
     plt.xlabel('x-Axis')
     plt.ylabel('y-Axis')
-    plt.scatter(x,y,c=color,s=np.pi*3,alpha=0.5)
-    plt.show()
+    #Plot the points
+    if pointByPoint:
+        plt.ion()
+        for i in range(0,len(x)):
+            plt.scatter(x[i], y[i], c=color, s=np.pi * 3, alpha=0.5)
+            plt.pause(0.0001)
+        while True:
+            plt.pause(0.05)
+    else:
+        plt.scatter(x,y,c=color,s=np.pi*3,alpha=0.5)
+        plt.show()
 
 def distributionPlot(px,name):
 #Find the ratios
@@ -127,11 +179,12 @@ def distributionPlot(px,name):
 x = []
 y=[]
 for i in range(0,1):
-    xpart,ypart = calcIfs(barnsleyTransform)
+    transformsU,quantity = buildSystem(predefinedSet=roseLikeTransform)
+    xpart,ypart = calcIfs(transformsU)
     x.extend(xpart)
     y.extend(ypart)
 
-fractalPlot(x,y,color=(random.random(),random.random(),random.random()))
+fractalPlot(x,y,color=(random.random(),random.random(),random.random()),pointByPoint=False)
 #rx,ry = findRatios(x,y)
 #distributionPlot(rx,"x")
 #distributionPlot(ry,"y")
