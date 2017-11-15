@@ -39,6 +39,26 @@ nsnTransform = [
     [na([[0-0.15,0.28],[0.26,0.24]]),na([0,0.44]),0,0.04]
 ]
 
+serTransform = [
+    [na([[0.5,0],[0,0.5]]),na([0,0]),0,0.33],
+    [na([[0.5,0],[0,0.5]]),na([0.5,0]),0,0.33],
+    [na([[0.5,0.0],[0.0,0.5]]),na([0.25,0.433]),0,0.34]
+]
+
+goldenDragon = [
+    [na([[0.62367,0-0.40337],[0.40337,0.62367]]),na([0,0]),0,0.5],
+    [na([[0-0.37633,0-0.40337],[0.40337,0-0.37633]]),na([0.5,0]),0,0.5]
+]
+
+#Make predefined easier
+allIFS = {}
+allIFS["barnsley"] = barnsleyTransform
+allIFS["rose"] = roseLikeTransform
+allIFS["nsn"] = nsnTransform
+allIFS["triangle"] = serTransform
+allIFS["goldendragon"] = goldenDragon
+
+
 #Get Set
 def askForTransform(indexd = ""):
     print("-------------- Transform %s ---------------"%indexd)
@@ -64,12 +84,15 @@ def buildSystem(predefinedSet=barnsleyTransform):
     print("RECCOMENDED points Quantity: 50000")
     print("--------------------------------------------")
     pointsQuantity = int(input("Number of Points: "))
-    usePredefined = str(input("Use Predefined Set? [y/n]: "))
-    if usePredefined =="y":
+    usePredefined = str(input("Use Predefined Set? [y/n/name]: "))
+    if usePredefined !="n":
+        willusethisset = predefinedSet
+        if(usePredefined != "y"):
+            willusethisset = allIFS[str(usePredefined)]
         print("Using this as the set: it may look different...")
-        print(str(predefinedSet))
+        print(str(willusethisset))
         print("--------------------------------------------")
-        return predefinedSet,pointsQuantity
+        return willusethisset,pointsQuantity
     print("--------------------------------------------")
     counter = 0
     allTransForms = []
@@ -179,7 +202,7 @@ def distributionPlot(px,name):
 x = []
 y=[]
 for i in range(0,1):
-    transformsU,quantity = buildSystem(predefinedSet=roseLikeTransform)
+    transformsU,quantity = buildSystem(predefinedSet=goldenDragon)
     xpart,ypart = calcIfs(transformsU)
     x.extend(xpart)
     y.extend(ypart)
