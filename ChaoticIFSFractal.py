@@ -1,4 +1,4 @@
-#Imports
+# ======================= Imports ==============================================
 print("Getting imports")
 import matplotlib.pyplot as plt
 import numpy as np
@@ -10,56 +10,82 @@ import scipy.stats as stats
 import pylab as pl
 na = np.array
 
-#Settings recomended 10^4
-quantity = 5* int(math.pow(10,4))
-initial = np.array([1,1])
-
-#Sets
-
-#fern
+# ========================== Predefined Transformations =======================
+# Predefined Transformations: [MATRIX as [[A,B],[C,D]], SHIFTS as [X,Y], ROTATION ,PROBABILITY]
+# Fern
 barnsleyTransform = [
     [na([[0,0],[0,0.16]]),na([0,0]),0,0.01],
     [na([[0.85,0.04],[0-0.04,0.85]]),na([0,1.6]),0,0.85],
     [na([[0.2,0-0.26],[0.23,0.22]]),na([0,1.6]),0,0.07],
     [na([[0-0.15,0.28],[0.26,0.24]]),na([0,0.44]),0,0.07]
 ]
-
-#rose like y distribution around 1.6
+# Rose
 roseLikeTransform = [
     [na([[0,0],[0,0.16]]),na([0,0]),0,0.01],
     [na([[0.85,0.04],[0-0.04,0.85]]),na([0,1.6]),45,0.85],
     [na([[0.2,0-0.26],[0.23,0.22]]),na([0,1.6]),3,0.10],
     [na([[0-0.15,0.28],[0.26,0.24]]),na([0,0.44]),0,0.04]
 ]
-
+# Galaxy
 nsnTransform = [
     [na([[0,0],[0,0.16]]),na([0,0]),0,0.01],
     [na([[0.85,0.04],[0-0.04,0.85]]),na([0,1.6]),60,0.85],
     [na([[0.2,0-0.26],[0.23,0.22]]),na([0,1.6]),5,0.10],
     [na([[0-0.15,0.28],[0.26,0.24]]),na([0,0.44]),0,0.04]
 ]
-
-serTransform = [
+# Serenpenski Triangle
+triangle = [
     [na([[0.5,0],[0,0.5]]),na([0,0]),0,0.33],
     [na([[0.5,0],[0,0.5]]),na([0.5,0]),0,0.33],
     [na([[0.5,0.0],[0.0,0.5]]),na([0.25,0.433]),0,0.34]
 ]
-
+# Golden Dragon
 goldenDragon = [
     [na([[0.62367,0-0.40337],[0.40337,0.62367]]),na([0,0]),0,0.5],
     [na([[0-0.37633,0-0.40337],[0.40337,0-0.37633]]),na([0.5,0]),0,0.5]
 ]
-
-#Make predefined easier
+# Golden Dragon Variant Branch
+branch=[
+    [na([[0.62327,0-0.40337],[0.40337,0.62327]]),na([0,0]),32.8938,0.5],
+    [na([[0-0.37633,0-0.40337],[0.40337,0-0.37633]]),na([1,0]),133.014178,0.5]
+]
+# Binary Tree
+symetricBinaryTree = [
+    [na([[0.7,0],[0,0.7]]),na([0,1]),9,0.33],
+    [na([[0.7,0],[0,0.7]]),na([0,1]),0-9,0.33],
+    [na([[1,0],[0,1]]),na([0,0]),0,0.34]
+]
+# Pentadentrite
+pentadentrite=[
+    [na([[0.341,0-0.071],[0.071,0.341]]),na([0,0]),0,0.17],
+    [na([[0.038,0-0.346],[0.346,0.038]]),na([0.341,0.071]),0,0.17],
+    [na([[0.341,0-0.071],[0.071,0.341]]),na([0.379,0.418]),0,0.17],
+    [na([[0-0.234,0.258],[0-0.258,0-0.234]]),na([0.720,0.489]),0,0.17],
+    [na([[0.173,0.302],[0-0.302,0.173]]),na([0.486,0.231]),0,0.16],
+    [na([[0.341,0-0.071],[0.071,0.341]]),na([0.659,0-0.071]),0,0.16]
+]
+# Koch Curve
+koch=[
+    [na([[0.3,0],[0,0.3]]),na([0,0]),0,0.25],
+    [na([[0.16,0-0.23],[0.23,0.16]]),na([0.3,0]),0,0.25],
+    [na([[0.16,0.23],[0-0.23,0.16]]),na([0.5,0.23]),0,0.25],
+    [na([[0.3,0],[0,0.3]]),na([0.6,0]),0,0.25]
+]
+# Make predefined easier
 allIFS = {}
 allIFS["barnsley"] = barnsleyTransform
 allIFS["rose"] = roseLikeTransform
 allIFS["nsn"] = nsnTransform
-allIFS["triangle"] = serTransform
+allIFS["triangle"] = triangle
 allIFS["goldendragon"] = goldenDragon
+allIFS["tree"]= symetricBinaryTree
+allIFS["branch"]=branch
+allIFS["penta"]=pentadentrite
+allIFS["koch"]=koch
 
 
-#Get Set
+# ============================================== GUI ==========================================
+# Asks the user to specify constants of a Transform one time
 def askForTransform(indexd = ""):
     print("-------------- Transform %s ---------------"%indexd)
     a = float(input("Enter A: "))
@@ -72,8 +98,8 @@ def askForTransform(indexd = ""):
     p = float(input("Enter Probability: "))
     return [np.array([[a,b],[c,d]]),np.array([xs,ys]),r,p]
 
-#ask the user for info
-def buildSystem(predefinedSet=barnsleyTransform):
+# Gui for configuring IFS and Transforms
+def buildSystem(predefinedSet=barnsleyTransform,allSets=allIFS):
     print("---------------------------------------------------------------------")
     print("Welcome To Chaotic IFS Fractal Generator by Michael N.")
     print("---------------------------------------------------------------------")
@@ -81,14 +107,16 @@ def buildSystem(predefinedSet=barnsleyTransform):
     print("  a b   for Stretch       ")
     print("  c d                     ")
     print("ALL p % as a FRACTION must add up to 1 !!! use nice numbers please ex. type 0.5  for 50% ")
+    print("Available Presets %s" % allSets.keys())
     print("RECCOMENDED points Quantity: 50000")
     print("--------------------------------------------")
     pointsQuantity = int(input("Number of Points: "))
+
     usePredefined = str(input("Use Predefined Set? [y/n/name]: "))
     if usePredefined !="n":
         willusethisset = predefinedSet
         if(usePredefined != "y"):
-            willusethisset = allIFS[str(usePredefined)]
+            willusethisset = allSets[str(usePredefined)]
         print("Using this as the set: it may look different...")
         print(str(willusethisset))
         print("--------------------------------------------")
@@ -105,7 +133,7 @@ def buildSystem(predefinedSet=barnsleyTransform):
     print("--------------------- All Transforms Set ---------------------------")
     return allTransForms,pointsQuantity
 
-#DIRECTLY from stack overflow ALL credit for this function to the author at https://stackoverflow.com/questions/3160699/python-progress-bar
+# Progress Bar: DIRECTLY from stack overflow ALL credit for this function to the author at https://stackoverflow.com/questions/3160699/python-progress-bar
 def update_progress(progress):
 
     barLength = 10 # Modify this to change the length of the progress bar
@@ -126,35 +154,56 @@ def update_progress(progress):
     sys.stdout.write(text)
     sys.stdout.flush()
 
-#Generalized Affine Transformation: R(Sx) + m    R Rotation matrix S stretch x vector m shift
+
+# =================================== Calculations ============================================
+
+# Affine Transformation: R(Sx) + m    R Rotation matrix S stretch x vector m shift
 def affine(x,theta=0,stretch= np.array([[1,1],[1,1]]) ,shift=np.array([0,0])):
     R = np.array([[np.cos(theta),-np.sin(theta)],[np.sin(theta),np.cos(theta)]])
     return np.add(np.matmul(R,np.matmul(stretch,x)), shift.transpose())
 
-#Iterated Function System
-def ifs(pointsQuantity,transformations,deterministic=False,initialPoint=np.array([1,1]),pIndex=3,tIndex=2,sIndex=0,shiftIndex=1,):
+# Iterated Function System
+def ifs(pointsQuantity,transformations,initialPoint=np.array([1,1]),pIndex=3,tIndex=2,sIndex=0,shiftIndex=1,):
+    # pIndex: index of the proability in transformations
+    # tIndex:
+
+    # Point setup &  storage
     allXCord = [(initialPoint[0:1:1].tolist())[0]]
     allYCord = [(initialPoint[1:2:1].tolist())[0]]
     nextPoint = initialPoint
+
+    # Sum Probabilities of Transforms
     allProbabilities = []
     for m in transformations:
         allProbabilities.append(m[pIndex])
+
+    #Run the calculation
     for i in range(0,pointsQuantity+1):
         update_progress(round((i/(pointsQuantity+1))*100)/100)
+
+        # Select random set based on probability set
         k = (np.random.choice(len(transformations), 1, p=allProbabilities))[0]
         trans = transformations[k]
+
+        # Calculate the next point
         nextPoint = (affine(nextPoint,theta=trans[tIndex],stretch=trans[sIndex],shift=trans[shiftIndex])).transpose()
+
+        # Store the Cords.
         allXCord.append(nextPoint.item(0))
         allYCord.append(nextPoint.item(1))
+
     return allXCord, allYCord
 
 #Calculate the Points
-def calcIfs(transformSet):
+def calcIfs(transformSet,quantity=5* int(math.pow(10,4))):
     print("[Beginning Calculation] points=%s"%quantity)
     x,y = ifs(quantity,transformSet)
     sys.stdout.flush()
     print("End")
     return x,y
+
+
+# ======================================== Statistics =========================================
 
 #Find Ratio between  x+1 to x
 def findRatios(x,y):
@@ -170,9 +219,11 @@ def findRatios(x,y):
             #print("For item X-ratio: %s  Y-ratio: %s"%(str(ratioX),str(ratioY)))
     return allXRatios,allYRatios
 
+# Average: average of items in the np array
 def findAverage(allX):
     return sum(allX)/len(allX)
 
+# Plot Scatter: cords x against y
 def fractalPlot(x,y,color=(0,0,0),pointByPoint=False):
     plt.title('Chaotic IFS Fractal: Graph')
     plt.xlabel('x-Axis')
@@ -189,7 +240,8 @@ def fractalPlot(x,y,color=(0,0,0),pointByPoint=False):
         plt.scatter(x,y,c=color,s=np.pi*3,alpha=0.5)
         plt.show()
 
-def distributionPlot(px,name):
+# Plot Histogram: the ratios in the list px
+def distributionPlot(px,name=""):
 #Find the ratios
     dispx = sorted(px)
     fit = stats.norm.pdf(dispx, np.mean(dispx), np.std(dispx))
@@ -198,17 +250,25 @@ def distributionPlot(px,name):
     pl.hist(dispx,normed=True)
     pl.show()
 
-#Run calculations
-x = []
-y=[]
-for i in range(0,1):
-    transformsU,quantity = buildSystem(predefinedSet=goldenDragon)
-    xpart,ypart = calcIfs(transformsU)
-    x.extend(xpart)
-    y.extend(ypart)
 
-fractalPlot(x,y,color=(random.random(),random.random(),random.random()),pointByPoint=False)
-#rx,ry = findRatios(x,y)
-#distributionPlot(rx,"x")
-#distributionPlot(ry,"y")
+# ==================================== Run the Calculations ===================================
+if __name__ == "__main__":
+    # Storage
+    x = []
+    y=[]
+
+    # Run one St of calculations
+    for i in range(0,1):
+        transformsU,quantity = buildSystem()
+        xpart,ypart = calcIfs(transformsU)
+        x.extend(xpart)
+        y.extend(ypart)
+
+    # Plot the set of calculations
+    fractalPlot(x,y,color=(random.random(),random.random(),random.random()),pointByPoint=False)
+
+    # Statistical Info
+    rx,ry = findRatios(x,y)
+    distributionPlot(rx,"x")
+    distributionPlot(ry,"y")
 
