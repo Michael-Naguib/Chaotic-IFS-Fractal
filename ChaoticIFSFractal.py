@@ -269,6 +269,10 @@ if __name__ == "__main__":
 
     # Statistical Info
     rx,ry = findRatios(x,y)
+    s = []
+    for i in range(0,len(rx)):
+        s.append(math.sqrt(math.pow(x[i],2) + math.pow(y[i],2)))
+    distributionPlot(s,"Slope length or ratio")
     distributionPlot(rx,"x")
     distributionPlot(ry,"y")
 
