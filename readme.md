@@ -20,7 +20,7 @@ and is implemented in Numpy
 + ```nsn```: A galaxy like spiral ascending
 
 ## Features
-+ Terminal Interface for configuring a Chaotic Iterated Function System
++ Terminal Interface for configuring a Chaotic Iterated Function System: ```python ChaoticIFSFractal.py```
 + A few statistical tests on the numbers generated
 
 Project by Michael Naguib
