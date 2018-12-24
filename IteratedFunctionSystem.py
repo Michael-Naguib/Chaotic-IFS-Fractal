@@ -46,7 +46,18 @@
 - ```x_name```: the name of the x axis
 - ```y_name```: the name of the y axis
 - ```title```: the name title of the graph
+#### method (static) ```quickAffine(self,x_vect,stretch= np.array([[1,1],[1,1]]) ,shift=np.array([0,0]))```
+- Preforms an affine transformation on a row vector name x_vect BUT does not explicitly calculate rotation... faster
+- ```x_vect```: the input vector as a numpy array ex. x_vect = np.array([0,42])
+- ```stretch```: a matrix to stretch the x_vect by
+- ```shift```: is added to the x_vect to shift it...
+#### method (static) ```chaoticQuickAffineGenerator(constants)```:
+- function takes a set of constants as described below and builds a new probabilistic function that selects based on the groups of constants
+- returns that new function so it can be used throught other programs (curried function...)...
+- gains a speed boost by not calculating rotation by theta...
+- ```constants```: is essentially a list of functions .... see ```chaoticAffineGenerator``` constants argument
 '''
+
 #imports
 import numpy as np
 import random
@@ -113,7 +124,32 @@ class IFS:
         #Plot the points
         plt.scatter(points_tuple[0], points_tuple[1], c=[(random.random(),random.random(),random.random())], s=np.pi * 3, alpha=0.5)
         plt.show()
-
+    #quick Affine: rotation matrix often not used so cut those operations out to improve speed
+    @staticmethod
+    def quickAffine(x_vector,stretch= np.array([[1,1],[1,1]]),shift=np.array([0,0])):
+        return np.add(np.matmul(stretch,x_vector), shift.transpose())
+    #quick affine: ignores calculating rotation matrix: 
+    @staticmethod
+    def chaoticQuickAffineGenerator(constants):
+        #CONSTANTS: the index locaiton of the desired values in each
+        PROBABILITY_INDEX=3
+        #THETA_INDEX=2 #Quick affine does not use rotation matrix....
+        STRETCH_INDEX=0
+        SHIFT_INDEX=1
+        # Sum Probabilities of Transforms
+        allProbabilities = []
+        for constant in constants:
+            allProbabilities.append(constant[PROBABILITY_INDEX])
+        def curriedFunc(x_vector):
+            #recalculate this each time...
+            probs = allProbabilities
+            transformations = constants
+            #select a random transformation
+            k = (np.random.choice(len(transformations), 1, p=allProbabilities))[0]
+            trans = transformations[k]
+            #apply it
+            return (IFS.quickAffine(x_vector,stretch=trans[STRETCH_INDEX],shift=trans[SHIFT_INDEX])).transpose()
+        return curriedFunc
 #Begin test
 if __name__ == "__main__":
     print("A test of the Iterated function System:")

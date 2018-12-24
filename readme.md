@@ -68,6 +68,13 @@ and is implemented in Numpy
 - ```x_name```: the name of the x axis
 - ```y_name```: the name of the y axis
 - ```title```: the name title of the graph
-'''
-
-
+#### method (static) ```quickAffine(self,x_vect,stretch= np.array([[1,1],[1,1]]) ,shift=np.array([0,0]))```
+- Preforms an affine transformation on a row vector name x_vect BUT does not explicitly calculate rotation... faster
+- ```x_vect```: the input vector as a numpy array ex. x_vect = np.array([0,42])
+- ```stretch```: a matrix to stretch the x_vect by
+- ```shift```: is added to the x_vect to shift it...
+#### method (static) ```chaoticQuickAffineGenerator(constants)```:
+- function takes a set of constants as described below and builds a new probabilistic function that selects based on the groups of constants
+- returns that new function so it can be used throught other programs (curried function...)...
+- gains a speed boost by not calculating rotation by theta...
+- ```constants```: is essentially a list of functions .... see ```chaoticAffineGenerator``` constants argument

@@ -23,13 +23,17 @@ if __name__=="__main__":
     settings = newSystem.run()
     function_set = settings[0]
     points_quantity = settings[1]
+    speedup_mode = settings[2]
 
-    #Setup the IFS
-    func = IFS.chaoticAffineGenerator(function_set)
+    #Setup the IFS (SPEEDUP does not take into account theta and instead asks theta to be calculated into the stretch matrix beforehand)
+    if(speedup_mode):
+        func = IFS.chaoticQuickAffineGenerator(function_set)
+    else:
+        func = IFS.chaoticAffineGenerator(function_set)
 
     #Preform the IFS calculations...
     point_data = IFS.run(func,max_points=points_quantity)
-   
+  
     #display the data
     IFS.plot(point_data)
     
@@ -44,6 +48,8 @@ if __name__=="__main__":
         pentadentrite
         koch
         ... more...
+        note some may not work with chaoticQuickAffineGenerator
+        as it does not preform matrix calculation for rotation...
     
     #create the curried function off of the constants
     func = IFS.chaoticAffineGenerator(constants["tree"])

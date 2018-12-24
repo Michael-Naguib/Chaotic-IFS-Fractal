@@ -16,13 +16,14 @@ class ChaoticIFSBuilder():
     def run(self):
         #ask...
         self.showTitle()
+        speed = self.askSpeed()
         constant_selected = self.getSetConstants()
         print("-------------------------- Selected Set -----------------------------")
         pprint.pprint(constant_selected)
         quant = self.askPointQuant()
 
         #return
-        return (constant_selected,quant)
+        return (constant_selected,quant,speed)
     #title
     def showTitle(self):
         print("---------------------------------------------------------------------")
@@ -59,14 +60,30 @@ class ChaoticIFSBuilder():
                 break
         print("------------- All Transforms Set ----------")
         return allTransForms
+    #ask use speedup mode
+    def askSpeed(self):
+        print("---------------------------------------------------------------------")
+        s = input("     Enable Speedup mode (rotation matrix not used): [y/n] ")
+        return True if s[0:1].lower() == "y" else False
     #gets the constants
     def getSetConstants(self):
+        keys=list(self.constants.keys())
+        keysStr=""
+        #every 5 add a newline and space tab (format used...)
+        for i in range(0,len(keys)):
+            keysStr = keysStr + str(keys[i]) + "      "
+            if(i%5==0 and not i==0):
+                keysStr=keysStr+"\n     "
+        
         while True:
             print("---------------------------------------------------------------------")
             print("     The available constant sets are: ")
-            print("     "+str(self.constants.keys()))
-            print("                         ")
+            print("                                   ")
+            print("     "+keysStr)
+            print("                                   ")
+            print("     (note if using quickAffine some may not work)")
             print("     The default selected set is {0}".format(self.defult_constant_name))
+            print(" ")
             res = input("  Use default set (d), create a new set (c), or select from the above (s): [d/c/s]")
             if res[0:1].lower() == "d":
                 return self.constants[self.defult_constant_name]
