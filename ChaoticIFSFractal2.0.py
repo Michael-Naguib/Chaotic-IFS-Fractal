@@ -43,6 +43,7 @@ if __name__=="__main__":
         branch
         pentadentrite
         koch
+        ... more...
     
     #create the curried function off of the constants
     func = IFS.chaoticAffineGenerator(constants["tree"])
