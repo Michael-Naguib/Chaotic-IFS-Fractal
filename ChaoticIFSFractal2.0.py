@@ -35,32 +35,5 @@ if __name__=="__main__":
     point_data = IFS.run(func,max_points=points_quantity)
   
     #display the data
-    IFS.plot(point_data)
+    IFS.plot(point_data,heat=False)
     
-    '''~ Predefined Constants ~: constants["constant name here"]
-        barnsleyTransform
-        roseLikeTransform
-        nsnTransform
-        triangle
-        goldenDragon
-        symetricBinaryTree
-        branch
-        pentadentrite
-        koch
-        ... more...
-        note some may not work with chaoticQuickAffineGenerator
-        as it does not preform matrix calculation for rotation...
-    
-    #create the curried function off of the constants
-    func = IFS.chaoticAffineGenerator(constants["tree"])
-
-    #Set the number of points to compute
-    POINTS_QUANTITY= 100000
-
-    #do the calculation... (note log status defaults true)
-    point_data = IFS.run(func,max_points=POINTS_QUANTITY)
-    
-    #display the data
-    IFS.plot(point_data)
-    '''
-

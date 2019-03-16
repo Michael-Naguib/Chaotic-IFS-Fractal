@@ -2,11 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e5a368d6-3abb-40dc-87c5-f2b2cd708e46" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/ChaoticIFSFractal.py" afterPath="$PROJECT_DIR$/ChaoticIFSFractal.py" />
+      <change afterPath="$PROJECT_DIR$/PlottingUtil.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/ChaoticIFSFractal.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/ChaoticIFSFractal.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChaoticIFSFractal2.0.py" beforeDir="false" afterPath="$PROJECT_DIR$/ChaoticIFSFractal2.0.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IteratedFunctionSystem.py" beforeDir="false" afterPath="$PROJECT_DIR$/IteratedFunctionSystem.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/readme.md" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
-    <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -17,25 +21,45 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="ChaoticIFSFractal.py" pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ChaoticIFSFractal.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="669">
-              <caret line="274" column="21" lean-forward="false" selection-start-line="274" selection-start-column="21" selection-end-line="274" selection-end-column="21" />
+            <state relative-caret-position="2227">
+              <caret line="260" column="16" selection-start-line="260" selection-start-column="16" selection-end-line="260" selection-end-column="16" />
               <folding>
                 <element signature="e#106#137#0" expanded="true" />
-                <element signature="e#3107#3537#0" expanded="false" />
-                <element signature="e#3649#5182#0" expanded="false" />
-                <element signature="e#5375#5991#0" expanded="false" />
-                <element signature="e#6257#6405#0" expanded="false" />
-                <element signature="e#6549#7510#0" expanded="false" />
-                <element signature="e#6989#7479#0" expanded="false" />
-                <element signature="e#7597#7740#0" expanded="false" />
-                <element signature="e#7895#8295#0" expanded="false" />
-                <element signature="e#8368#8394#0" expanded="false" />
-                <element signature="e#8489#8901#0" expanded="false" />
-                <element signature="e#8981#9199#0" expanded="false" />
+                <element signature="e#3107#3537#0" />
+                <element signature="e#3649#5182#0" />
+                <element signature="e#5375#5991#0" />
+                <element signature="e#6257#6405#0" />
+                <element signature="e#6549#7510#0" />
+                <element signature="e#6989#7479#0" />
+                <element signature="e#7597#7740#0" />
+                <element signature="e#7895#8295#0" />
+                <element signature="e#8368#8394#0" />
+                <element signature="e#8489#8901#0" />
+                <element signature="e#8981#9199#0" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ChaoticIFSFractal2.0.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-107">
+              <folding>
+                <element signature="e#324#362#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/PlottingUtil.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-192">
+              <caret line="14" column="18" selection-start-line="14" selection-start-column="18" selection-end-line="14" selection-end-column="18" />
             </state>
           </provider>
         </entry>
@@ -76,49 +100,40 @@
         <option value="$PROJECT_DIR$/ifsTest.py" />
         <option value="$PROJECT_DIR$/predefined.py" />
         <option value="$PROJECT_DIR$/ChaoticIFSFractal.py" />
+        <option value="$PROJECT_DIR$/readme.md" />
+        <option value="$PROJECT_DIR$/PlottingUtil.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="174" />
-    <option name="y" value="539" />
+    <option name="x" value="172" />
+    <option name="y" value="537" />
     <option name="width" value="1135" />
-    <option name="height" value="841" />
+    <option name="height" value="843" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
-    <navigator currentView="ProjectPane" proportions="" version="1">
-      <flattenPackages />
-      <showMembers />
-      <showModules />
-      <showLibraryContents />
-      <hideEmptyPackages />
-      <abbreviatePackageNames />
-      <autoscrollToSource />
-      <autoscrollFromSource />
-      <sortByType />
-      <manualOrder />
+    <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
               <item name="ChaoticIFSFractal" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ChaoticIFSFractal" type="462c0819:PsiDirectoryNode" />
+              <item name="Chaotic-IFS-Fractal" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scratches" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="settings.editor.selected.configurable" value="preferences.editor" />
-    <property name="last_opened_file_path" value="$USER_HOME$/Documents/Sandbox Program Files/ascii-adventure/class_definitions.py" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -134,6 +149,7 @@
   </component>
   <component name="RunManager" selected="Python.ChaoticIFSFractal">
     <configuration name="ChaoticIFSFractal" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="ChaoticIFSFractal" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -144,14 +160,17 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="ChaoticIFSFractal" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ChaoticIFSFractal.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
     </configuration>
     <configuration default="true" type="PythonConfigurationType" factoryName="Python">
+      <module name="example" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -162,14 +181,17 @@
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="example" />
       <option name="SCRIPT_NAME" value="" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
     </configuration>
     <configuration name="ifsMath" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="example" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -180,14 +202,17 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="example" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ifsMath.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
     </configuration>
     <configuration name="ifsTest" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="example" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -198,14 +223,17 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="example" />
       <option name="SCRIPT_NAME" value="C:\Users\Mike\PycharmProjects\example\ChaoticIFSFractal.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
     </configuration>
     <configuration name="test" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="example" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -216,34 +244,35 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="example" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
     </configuration>
     <configuration default="true" type="Tox" factoryName="Tox">
+      <module name="example" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
-      <envs />
       <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="" />
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="example" />
+      <method v="2" />
     </configuration>
     <configuration default="true" type="tests" factoryName="Doctests">
+      <module name="example" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
-      <envs />
       <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="" />
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="example" />
       <option name="SCRIPT_NAME" value="" />
       <option name="CLASS_NAME" value="" />
       <option name="METHOD_NAME" value="" />
@@ -251,68 +280,66 @@
       <option name="TEST_TYPE" value="TEST_SCRIPT" />
       <option name="PATTERN" value="" />
       <option name="USE_PATTERN" value="false" />
+      <method v="2" />
     </configuration>
     <configuration default="true" type="tests" factoryName="Nosetests">
+      <module name="example" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
-      <envs />
       <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="" />
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="example" />
       <option name="_new_regexPattern" value="&quot;&quot;" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
       <option name="_new_target" value="&quot;&quot;" />
       <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
     </configuration>
     <configuration default="true" type="tests" factoryName="Unittests">
+      <module name="example" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
-      <envs />
       <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="" />
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="example" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
       <option name="_new_target" value="&quot;&quot;" />
       <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
     </configuration>
     <configuration default="true" type="tests" factoryName="py.test">
+      <module name="example" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
-      <envs />
       <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="" />
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="example" />
       <option name="_new_keywords" value="&quot;&quot;" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
       <option name="_new_target" value="&quot;&quot;" />
       <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
     </configuration>
-    <list size="4">
-      <item index="0" class="java.lang.String" itemvalue="Python.test" />
-      <item index="1" class="java.lang.String" itemvalue="Python.ifsMath" />
-      <item index="2" class="java.lang.String" itemvalue="Python.ifsTest" />
-      <item index="3" class="java.lang.String" itemvalue="Python.ChaoticIFSFractal" />
+    <list>
+      <item itemvalue="Python.test" />
+      <item itemvalue="Python.ifsMath" />
+      <item itemvalue="Python.ifsTest" />
+      <item itemvalue="Python.ChaoticIFSFractal" />
     </list>
     <recent_temporary>
-      <list size="4">
-        <item index="0" class="java.lang.String" itemvalue="Python.ChaoticIFSFractal" />
-        <item index="1" class="java.lang.String" itemvalue="Python.ifsTest" />
-        <item index="2" class="java.lang.String" itemvalue="Python.ifsMath" />
-        <item index="3" class="java.lang.String" itemvalue="Python.test" />
+      <list>
+        <item itemvalue="Python.ChaoticIFSFractal" />
+        <item itemvalue="Python.ifsTest" />
+        <item itemvalue="Python.ifsMath" />
+        <item itemvalue="Python.test" />
       </list>
     </recent_temporary>
-  </component>
-  <component name="ShelveChangesManager" show_recycled="false">
-    <option name="remove_strategy" value="false" />
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -328,36 +355,30 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.10735061" sideWeight="0.4940978" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3295325" sideWeight="0.3601269" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32918552" sideWeight="0.49785176" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.0" sideWeight="0.4849624" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295325" sideWeight="0.6398731" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24973147" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.0" sideWeight="0.48915917" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24973147" sideWeight="0.5059022" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32918552" sideWeight="0.7309345" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32975295" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4940978" visible="true" weight="0.16060807" />
+      <window_info id="Structure" order="1" weight="0.24973147" />
+      <window_info id="Favorites" order="2" sideWeight="0.5059022" side_tool="true" weight="0.24973147" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.6398731" weight="0.3295325" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.7309345" weight="0.32918552" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Version Control" order="7" sideWeight="0.49785176" weight="0.32918552" />
+      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.48915917" weight="0.0" />
+      <window_info anchor="bottom" id="Python Console" order="9" sideWeight="0.4849624" weight="0.0" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.3601269" side_tool="true" weight="0.3286119" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Data View" order="3" visible="true" weight="0.32975295" />
     </layout>
-  </component>
-  <component name="VcsContentAnnotationSettings">
-    <option name="myLimit" value="2678400000" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <breakpoints-dialog>
-        <breakpoints-dialog />
-      </breakpoints-dialog>
       <default-breakpoints>
         <breakpoint suspend="NONE" type="python-exception">
           <properties notifyOnTerminate="true" exception="BaseException">
@@ -365,7 +386,6 @@
           </properties>
         </breakpoint>
       </default-breakpoints>
-      <option name="time" value="4" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="PythonConfigurationType">
@@ -375,358 +395,89 @@
     </watches-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/ChaoticIFSFractal.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#106#137#0" expanded="true" />
-            <element signature="e#3107#3537#0" expanded="false" />
-            <element signature="e#3649#5182#0" expanded="false" />
-            <element signature="e#5375#5991#0" expanded="false" />
-            <element signature="e#6257#6405#0" expanded="false" />
-            <element signature="e#6549#7510#0" expanded="false" />
-            <element signature="e#6989#7479#0" expanded="false" />
-            <element signature="e#7597#7740#0" expanded="false" />
-            <element signature="e#7895#8295#0" expanded="false" />
-            <element signature="e#8368#8394#0" expanded="false" />
-            <element signature="e#8489#8901#0" expanded="false" />
-            <element signature="e#8981#9199#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ChaoticIFSFractal.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2457">
-          <caret line="127" column="0" lean-forward="false" selection-start-line="127" selection-start-column="0" selection-end-line="127" selection-end-column="0" />
-          <folding>
-            <element signature="e#106#137#0" expanded="true" />
-            <element signature="e#3107#3537#0" expanded="false" />
-            <element signature="e#3649#5182#0" expanded="false" />
-            <element signature="e#5375#5991#0" expanded="false" />
-            <element signature="e#6257#6405#0" expanded="false" />
-            <element signature="e#6549#7510#0" expanded="false" />
-            <element signature="e#6989#7479#0" expanded="false" />
-            <element signature="e#7597#7740#0" expanded="false" />
-            <element signature="e#7895#8295#0" expanded="false" />
-            <element signature="e#8368#8394#0" expanded="false" />
-            <element signature="e#8489#8901#0" expanded="false" />
-            <element signature="e#8981#9199#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Documents/Sandbox Program Files/ascii-adventure/class_definitions.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1680">
-          <caret line="82" column="30" lean-forward="false" selection-start-line="82" selection-start-column="30" selection-end-line="82" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ChaoticIFSFractal.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2667">
-          <caret line="127" column="0" lean-forward="false" selection-start-line="127" selection-start-column="0" selection-end-line="127" selection-end-column="0" />
-          <folding>
-            <element signature="e#106#137#0" expanded="true" />
-            <element signature="e#3107#3537#0" expanded="false" />
-            <element signature="e#3649#5182#0" expanded="false" />
-            <element signature="e#5375#5991#0" expanded="false" />
-            <element signature="e#6257#6405#0" expanded="false" />
-            <element signature="e#6549#7510#0" expanded="false" />
-            <element signature="e#6989#7479#0" expanded="false" />
-            <element signature="e#7597#7740#0" expanded="false" />
-            <element signature="e#7895#8295#0" expanded="false" />
-            <element signature="e#8368#8394#0" expanded="false" />
-            <element signature="e#8489#8901#0" expanded="false" />
-            <element signature="e#8981#9199#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Documents/Sandbox Program Files/ascii-adventure/class_definitions.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1680">
-          <caret line="82" column="30" lean-forward="false" selection-start-line="82" selection-start-column="30" selection-end-line="82" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ChaoticIFSFractal.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2667">
-          <caret line="127" column="0" lean-forward="false" selection-start-line="127" selection-start-column="0" selection-end-line="127" selection-end-column="0" />
-          <folding>
-            <element signature="e#106#137#0" expanded="true" />
-            <element signature="e#3107#3537#0" expanded="false" />
-            <element signature="e#3649#5182#0" expanded="false" />
-            <element signature="e#5375#5991#0" expanded="false" />
-            <element signature="e#6257#6405#0" expanded="false" />
-            <element signature="e#6549#7510#0" expanded="false" />
-            <element signature="e#6989#7479#0" expanded="false" />
-            <element signature="e#7597#7740#0" expanded="false" />
-            <element signature="e#7895#8295#0" expanded="false" />
-            <element signature="e#8368#8394#0" expanded="false" />
-            <element signature="e#8489#8901#0" expanded="false" />
-            <element signature="e#8981#9199#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Documents/Sandbox Program Files/ascii-adventure/class_definitions.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1722">
-          <caret line="82" column="30" lean-forward="false" selection-start-line="82" selection-start-column="30" selection-end-line="82" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ChaoticIFSFractal.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#106#137#0" expanded="true" />
-            <element signature="e#3107#3537#0" expanded="false" />
-            <element signature="e#3649#5182#0" expanded="false" />
-            <element signature="e#5375#5991#0" expanded="false" />
-            <element signature="e#6257#6405#0" expanded="false" />
-            <element signature="e#6549#7510#0" expanded="false" />
-            <element signature="e#6989#7479#0" expanded="false" />
-            <element signature="e#7597#7740#0" expanded="false" />
-            <element signature="e#7895#8295#0" expanded="false" />
-            <element signature="e#8368#8394#0" expanded="false" />
-            <element signature="e#8489#8901#0" expanded="false" />
-            <element signature="e#8981#9199#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ChaoticIFSFractal.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#106#137#0" expanded="true" />
-            <element signature="e#3107#3537#0" expanded="false" />
-            <element signature="e#3649#5182#0" expanded="false" />
-            <element signature="e#5375#5991#0" expanded="false" />
-            <element signature="e#6257#6405#0" expanded="false" />
-            <element signature="e#6549#7510#0" expanded="false" />
-            <element signature="e#6989#7479#0" expanded="false" />
-            <element signature="e#7597#7740#0" expanded="false" />
-            <element signature="e#7895#8295#0" expanded="false" />
-            <element signature="e#8368#8394#0" expanded="false" />
-            <element signature="e#8489#8901#0" expanded="false" />
-            <element signature="e#8981#9199#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ChaoticIFSFractal.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#106#137#0" expanded="true" />
-            <element signature="e#3107#3537#0" expanded="false" />
-            <element signature="e#3649#5182#0" expanded="false" />
-            <element signature="e#5375#5991#0" expanded="false" />
-            <element signature="e#6257#6405#0" expanded="false" />
-            <element signature="e#6549#7510#0" expanded="false" />
-            <element signature="e#6989#7479#0" expanded="false" />
-            <element signature="e#7597#7740#0" expanded="false" />
-            <element signature="e#7895#8295#0" expanded="false" />
-            <element signature="e#8368#8394#0" expanded="false" />
-            <element signature="e#8489#8901#0" expanded="false" />
-            <element signature="e#8981#9199#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ChaoticIFSFractal.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#106#137#0" expanded="true" />
-            <element signature="e#3107#3537#0" expanded="false" />
-            <element signature="e#3649#5182#0" expanded="false" />
-            <element signature="e#5375#5991#0" expanded="false" />
-            <element signature="e#6257#6405#0" expanded="false" />
-            <element signature="e#6549#7510#0" expanded="false" />
-            <element signature="e#6989#7479#0" expanded="false" />
-            <element signature="e#7597#7740#0" expanded="false" />
-            <element signature="e#7895#8295#0" expanded="false" />
-            <element signature="e#8368#8394#0" expanded="false" />
-            <element signature="e#8489#8901#0" expanded="false" />
-            <element signature="e#8981#9199#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ChaoticIFSFractal.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#106#137#0" expanded="true" />
-            <element signature="e#3107#3537#0" expanded="false" />
-            <element signature="e#3649#5182#0" expanded="false" />
-            <element signature="e#5375#5991#0" expanded="false" />
-            <element signature="e#6257#6405#0" expanded="false" />
-            <element signature="e#6549#7510#0" expanded="false" />
-            <element signature="e#6989#7479#0" expanded="false" />
-            <element signature="e#7597#7740#0" expanded="false" />
-            <element signature="e#7895#8295#0" expanded="false" />
-            <element signature="e#8368#8394#0" expanded="false" />
-            <element signature="e#8489#8901#0" expanded="false" />
-            <element signature="e#8981#9199#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ChaoticIFSFractal.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#106#137#0" expanded="true" />
-            <element signature="e#3107#3537#0" expanded="false" />
-            <element signature="e#3649#5182#0" expanded="false" />
-            <element signature="e#5375#5991#0" expanded="false" />
-            <element signature="e#6257#6405#0" expanded="false" />
-            <element signature="e#6549#7510#0" expanded="false" />
-            <element signature="e#6989#7479#0" expanded="false" />
-            <element signature="e#7597#7740#0" expanded="false" />
-            <element signature="e#7895#8295#0" expanded="false" />
-            <element signature="e#8368#8394#0" expanded="false" />
-            <element signature="e#8489#8901#0" expanded="false" />
-            <element signature="e#8981#9199#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ChaoticIFSFractal.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#106#137#0" expanded="true" />
-            <element signature="e#3107#3537#0" expanded="false" />
-            <element signature="e#3649#5182#0" expanded="false" />
-            <element signature="e#5375#5991#0" expanded="false" />
-            <element signature="e#6257#6405#0" expanded="false" />
-            <element signature="e#6549#7510#0" expanded="false" />
-            <element signature="e#6989#7479#0" expanded="false" />
-            <element signature="e#7597#7740#0" expanded="false" />
-            <element signature="e#7895#8295#0" expanded="false" />
-            <element signature="e#8368#8394#0" expanded="false" />
-            <element signature="e#8489#8901#0" expanded="false" />
-            <element signature="e#8981#9199#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ChaoticIFSFractal.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#106#137#0" expanded="true" />
-            <element signature="e#3107#3537#0" expanded="false" />
-            <element signature="e#3649#5182#0" expanded="false" />
-            <element signature="e#5375#5991#0" expanded="false" />
-            <element signature="e#6257#6405#0" expanded="false" />
-            <element signature="e#6549#7510#0" expanded="false" />
-            <element signature="e#6989#7479#0" expanded="false" />
-            <element signature="e#7597#7740#0" expanded="false" />
-            <element signature="e#7895#8295#0" expanded="false" />
-            <element signature="e#8368#8394#0" expanded="false" />
-            <element signature="e#8489#8901#0" expanded="false" />
-            <element signature="e#8981#9199#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ChaoticIFSFractal.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#106#137#0" expanded="true" />
-            <element signature="e#3107#3537#0" expanded="false" />
-            <element signature="e#3649#5182#0" expanded="false" />
-            <element signature="e#5375#5991#0" expanded="false" />
-            <element signature="e#6257#6405#0" expanded="false" />
-            <element signature="e#6549#7510#0" expanded="false" />
-            <element signature="e#6989#7479#0" expanded="false" />
-            <element signature="e#7597#7740#0" expanded="false" />
-            <element signature="e#7895#8295#0" expanded="false" />
-            <element signature="e#8368#8394#0" expanded="false" />
-            <element signature="e#8489#8901#0" expanded="false" />
-            <element signature="e#8981#9199#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ifsMath.py" />
-    <entry file="file://$PROJECT_DIR$/ifsMath.py" />
-    <entry file="file://$PROJECT_DIR$/test.py" />
-    <entry file="file://$PROJECT_DIR$/ifsMath.py" />
-    <entry file="file://$PROJECT_DIR$/test.py" />
-    <entry file="file://$PROJECT_DIR$/ifsMath.py" />
-    <entry file="file://$PROJECT_DIR$/test.py" />
-    <entry file="file://$PROJECT_DIR$/test.py" />
-    <entry file="file://$PROJECT_DIR$/test.py" />
     <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/ide/ide-scripting.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/ide/ide-scripting.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="21">
-          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ifsMath.py" />
     <entry file="file://$PROJECT_DIR$/test.py" />
-    <entry file="file://$USER_HOME$/Documents/Sandbox Program Files/ascii-adventure/class_definitions.py">
+    <entry file="file://$PROJECT_DIR$/../../Sandbox Program Files/ascii-adventure/class_definitions.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="305">
-          <caret line="82" column="30" lean-forward="false" selection-start-line="82" selection-start-column="30" selection-end-line="82" selection-end-column="30" />
+          <caret line="82" column="30" selection-start-line="82" selection-start-column="30" selection-end-line="82" selection-end-column="30" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/predefined.py">
+    <entry file="file://$PROJECT_DIR$/predefined.py" />
+    <entry file="file://$PROJECT_DIR$/constants.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="-27">
+          <caret line="134" column="1" lean-forward="true" selection-start-line="134" selection-start-column="1" selection-end-line="134" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/readme.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="136">
+            <caret line="8" column="43" selection-start-line="8" selection-start-column="43" selection-end-line="8" selection-end-column="43" />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ChaoticIFSFractal.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="669">
-          <caret line="274" column="21" lean-forward="false" selection-start-line="274" selection-start-column="21" selection-end-line="274" selection-end-column="21" />
+        <state relative-caret-position="2227">
+          <caret line="260" column="16" selection-start-line="260" selection-start-column="16" selection-end-line="260" selection-end-column="16" />
           <folding>
             <element signature="e#106#137#0" expanded="true" />
-            <element signature="e#3107#3537#0" expanded="false" />
-            <element signature="e#3649#5182#0" expanded="false" />
-            <element signature="e#5375#5991#0" expanded="false" />
-            <element signature="e#6257#6405#0" expanded="false" />
-            <element signature="e#6549#7510#0" expanded="false" />
-            <element signature="e#6989#7479#0" expanded="false" />
-            <element signature="e#7597#7740#0" expanded="false" />
-            <element signature="e#7895#8295#0" expanded="false" />
-            <element signature="e#8368#8394#0" expanded="false" />
-            <element signature="e#8489#8901#0" expanded="false" />
-            <element signature="e#8981#9199#0" expanded="false" />
+            <element signature="e#3107#3537#0" />
+            <element signature="e#3649#5182#0" />
+            <element signature="e#5375#5991#0" />
+            <element signature="e#6257#6405#0" />
+            <element signature="e#6549#7510#0" />
+            <element signature="e#6989#7479#0" />
+            <element signature="e#7597#7740#0" />
+            <element signature="e#7895#8295#0" />
+            <element signature="e#8368#8394#0" />
+            <element signature="e#8489#8901#0" />
+            <element signature="e#8981#9199#0" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/IteratedFunctionSystem.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-396" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ChaoticIFSBuilder.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="31" column="20" selection-start-line="31" selection-start-column="20" selection-end-line="31" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ChaoticIFSFractal2.0.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-107">
+          <folding>
+            <element signature="e#324#362#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PlottingUtil.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-192">
+          <caret line="14" column="18" selection-start-line="14" selection-start-column="18" selection-end-line="14" selection-end-column="18" />
         </state>
       </provider>
     </entry>

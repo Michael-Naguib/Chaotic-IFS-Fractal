@@ -40,12 +40,13 @@
     another set of constants
 ]
 ```
-#### ```plot(points_tuple,x_name="x",y_name="y",title="Graph")```:
+#### ```plot(points_tuple,x_name="x",y_name="y",title="Graph",heat=False)```:
 - takes input values and plots them as a scatter plot...
 - ```points_tuple```: where the first item is a np array corresponding to x values and the seccond item the y values 
 - ```x_name```: the name of the x axis
 - ```y_name```: the name of the y axis
 - ```title```: the name title of the graph
+- ```heat```: if heat is true a heatmap is plotted instead of a scatterplot
 #### method (static) ```quickAffine(self,x_vect,stretch= np.array([[1,1],[1,1]]) ,shift=np.array([0,0]))```
 - Preforms an affine transformation on a row vector name x_vect BUT does not explicitly calculate rotation... faster
 - ```x_vect```: the input vector as a numpy array ex. x_vect = np.array([0,42])
@@ -116,14 +117,24 @@ class IFS:
         return curriedFunc
     #plots the points
     @staticmethod
-    def plot(points_tuple,x_name="x",y_name="y",title="Graph"):
+    def plot(points_tuple,x_name="x",y_name="y",title="Graph",heat=False):
         #setup
-        plt.title(title)
-        plt.xlabel(x_name)
-        plt.ylabel(y_name)
-        #Plot the points
-        plt.scatter(points_tuple[0], points_tuple[1], c=[(random.random(),random.random(),random.random())], s=np.pi * 3, alpha=0.5)
-        plt.show()
+        x=points_tuple[0]
+        y =points_tuple[1]
+        if heat:
+            heatmap, xedges, yedges = np.histogram2d(points_tuple[0], points_tuple[1], bins=1000)
+            extent = [xedges[0], xedges[-1], yedges[0], yedges[-1]]
+            plt.clf()
+            plt.imshow(heatmap.T, extent=extent, origin='lower')
+            plt.show()
+        else:
+            plt.title(title)
+            plt.xlabel(x_name)
+            plt.ylabel(y_name)
+            #Plot the points
+            plt.scatter(points_tuple[0], points_tuple[1], c=[(random.random(),random.random(),random.random())], s=np.pi * 3, alpha=0.5)
+            plt.show()
+
     #quick Affine: rotation matrix often not used so cut those operations out to improve speed
     @staticmethod
     def quickAffine(x_vector,stretch= np.array([[1,1],[1,1]]),shift=np.array([0,0])):
