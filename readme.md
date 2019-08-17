@@ -27,6 +27,19 @@ a collection of vector functions with weighted probabilities.
 + Predefined transformations as listed above that can be selected in the terminal interface
 + Point Quantity customization
 
+## Sample Screenshots:
++ ** Note! ** Point Quantity based upon calculated point quantity and does not include additional points added withine a threshold of each point so that the data is more dense and displays better ...
+
++ Here is a screenshot of the Golden Dragon Fractal: (1Mil Points) 
+![Golden Dragon Fractal](https://raw.githubusercontent.com/Michael-Naguib/Chaotic-IFS-Fractal/master/gd1.png "Golden Dragon") 
+![Golden Dragon Fractal](https://raw.githubusercontent.com/Michael-Naguib/Chaotic-IFS-Fractal/master/gd2.png "Golden Dragon") 
++ Here is a screenshot of the Barnsley Fern (bfern) Fractal: (1Mil Points) 
+![Barnsley Fern Fractal](https://raw.githubusercontent.com/Michael-Naguib/Chaotic-IFS-Fractal/master/bf1.png "Barnsley Fern") 
++ Here is a screenshot of the Nat Galaxy Fractal: (3Mil Points) 
+![Nat Galaxy Fractal](https://raw.githubusercontent.com/Michael-Naguib/Chaotic-IFS-Fractal/master/ng1.png "Nat Galaxy") 
++ Here is a screenshot of the Rose Fractal: (1.2Mil Points) 
+![Rose Fractal](https://raw.githubusercontent.com/Michael-Naguib/Chaotic-IFS-Fractal/master/r1.png "Rose") 
+
 ## Documentation: ```ChaoticIFSFractal2.0.py```,```ChaoticIFSBuilder.py```,```IteratedFunctionSystem.py```
 - A lot of the code used here was based on the chaotic fractal code... this is more just an storage than anything else...
 - more modular code for rapid testing was the key...
