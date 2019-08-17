@@ -31,8 +31,8 @@ a collection of vector functions with weighted probabilities.
 + ** Note! ** Point Quantity based upon calculated point quantity and does not include additional points added withine a threshold of each point so that the data is more dense and displays better ...
 
 + Here is a screenshot of the Golden Dragon Fractal: (1Mil Points) 
-![Golden Dragon Fractal](https://raw.githubusercontent.com/Michael-Naguib/Chaotic-IFS-Fractal/master/gd1.png "Golden Dragon") 
-![Golden Dragon Fractal](https://raw.githubusercontent.com/Michael-Naguib/Chaotic-IFS-Fractal/master/gd2.png "Golden Dragon") 
+![Golden Dragon Fractal](https://raw.githubusercontent.com/Michael-Naguib/Chaotic-IFS-Fractal/master/gd1.PNG "Golden Dragon") 
+![Golden Dragon Fractal 2](https://raw.githubusercontent.com/Michael-Naguib/Chaotic-IFS-Fractal/master/gd2.png "Golden Dragon 2") 
 + Here is a screenshot of the Barnsley Fern (bfern) Fractal: (1Mil Points) 
 ![Barnsley Fern Fractal](https://raw.githubusercontent.com/Michael-Naguib/Chaotic-IFS-Fractal/master/bf1.png "Barnsley Fern") 
 + Here is a screenshot of the Nat Galaxy Fractal: (3Mil Points) 
