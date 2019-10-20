@@ -28,7 +28,7 @@ a collection of vector functions with weighted probabilities.
 + Point Quantity customization
 
 ## Sample Screenshots:
-+ ** Note! ** Point Quantity based upon calculated point quantity and does not include additional points added withine a threshold of each point so that the data is more dense and displays better ...
++ **Note!** Point Quantity based upon calculated point quantity and does not include additional points added withine a threshold of each point so that the data is more dense and displays better ...
 
 + Here is a screenshot of the Golden Dragon Fractal: (1Mil Points) 
 ![Golden Dragon Fractal](https://raw.githubusercontent.com/Michael-Naguib/Chaotic-IFS-Fractal/master/screenshots/gd1.PNG "Golden Dragon") 
